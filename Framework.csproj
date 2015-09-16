@@ -1,0 +1,1053 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23B28C44-059F-4081-9258-0DA86271D400}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework</RootNamespace>
+    <AssemblyName>Framework</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm\Complex.cs" />
+    <Compile Include="Algorithm\Integral.cs" />
+    <Compile Include="Algorithm\Interpolation.cs" />
+    <Compile Include="Algorithm\LEquations.cs" />
+    <Compile Include="Algorithm\Matrix.cs" />
+    <Compile Include="Algorithm\NLEquations.cs" />
+    <Compile Include="Class\CADAutomation.cs" />
+    <Compile Include="Class\ConvertTool.cs" />
+    <Compile Include="Class\FontSize.cs" />
+    <Compile Include="Class\ComboItem.cs" />
+    <Compile Include="Class\GlobalData.cs" />
+    <Compile Include="Class\PackageEntity.cs" />
+    <Compile Include="Class\XmlTool.cs" />
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain1.Designer.cs">
+      <DependentUpon>FrmMain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\Entity\Chapter.cs" />
+    <Compile Include="Implement\Entity\Model.cs" />
+    <Compile Include="Implement\Entity\Template.cs" />
+    <Compile Include="Implement\Entity\User.cs" />
+    <Compile Include="Implement\Entity\Project.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement\AuthorityImpl.cs" />
+    <Compile Include="Implement\ContentImpl.cs" />
+    <Compile Include="Interface\Authority\UclModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Authority\UclModule.Designer.cs">
+      <DependentUpon>UclModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Authority\FrmModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Authority\FrmModule.Designer.cs">
+      <DependentUpon>FrmModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Common\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Common\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Common\UclError.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Common\UclError.Designer.cs">
+      <DependentUpon>UclError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Common\RichTextBoxEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Common\RichTextBoxEx.Designer.cs">
+      <DependentUpon>RichTextBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Common\WinExcelControlEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Common\WinExcelControlEx.Designer.cs">
+      <DependentUpon>WinExcelControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Common\WinWordControlEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Common\WinWordControlEx.Designer.cs">
+      <DependentUpon>WinWordControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Content\FrmModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Content\FrmModel.Designer.cs">
+      <DependentUpon>FrmModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Content\UclChapter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Content\UclChapter.Designer.cs">
+      <DependentUpon>UclChapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Content\FrmChapter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Content\FrmChapter.Designer.cs">
+      <DependentUpon>FrmChapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Content\UclModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Content\UclModel.Designer.cs">
+      <DependentUpon>UclModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Content\UclTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Content\UclTemplate.Designer.cs">
+      <DependentUpon>UclTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Content\FrmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Content\FrmTemplate.Designer.cs">
+      <DependentUpon>FrmTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Project\FrmProjectInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Project\FrmProjectInfo.Designer.cs">
+      <DependentUpon>FrmProjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Project\FrmProjectShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Project\FrmProjectShow.Designer.cs">
+      <DependentUpon>FrmProjectShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Reference\UclDesignDaquan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Reference\UclDesignDaquan.Designer.cs">
+      <DependentUpon>UclDesignDaquan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Reference\UclSpecification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Reference\UclSpecification.Designer.cs">
+      <DependentUpon>UclSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FemSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FemSelect.designer.cs">
+      <DependentUpon>FemSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAntiPressure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAntiPressure.Designer.cs">
+      <DependentUpon>FrmAntiPressure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmBeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmBeamForm.Designer.cs">
+      <DependentUpon>FrmBeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmArrayList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmArrayList.Designer.cs">
+      <DependentUpon>FrmArrayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAssessment.Designer.cs">
+      <DependentUpon>FrmAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAssessResultshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAssessResultshow.Designer.cs">
+      <DependentUpon>FrmAssessResultshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmClimateFeature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmClimateFeature.Designer.cs">
+      <DependentUpon>FrmClimateFeature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmComprehensiveEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmComprehensiveEvaluation.Designer.cs">
+      <DependentUpon>FrmComprehensiveEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmCompreStrength.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmCompreStrength.Designer.cs">
+      <DependentUpon>FrmCompreStrength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcretemaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcretemaintain.Designer.cs">
+      <DependentUpon>FrmConcretemaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcreteMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcreteMeasure.Designer.cs">
+      <DependentUpon>FrmConcreteMeasure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcreteProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcreteProject.Designer.cs">
+      <DependentUpon>FrmConcreteProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConretestrength1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConretestrength1.Designer.cs">
+      <DependentUpon>FrmConretestrength1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConstructPrepare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConstructPrepare.Designer.cs">
+      <DependentUpon>FrmConstructPrepare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmExcel.designer.cs">
+      <DependentUpon>FrmExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmFromSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmFromSelect.Designer.cs">
+      <DependentUpon>FrmFromSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmInsertText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmInsertText.Designer.cs">
+      <DependentUpon>FrmInsertText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmFormwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmFormwork.Designer.cs">
+      <DependentUpon>FrmFormwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmLEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmLEC.Designer.cs">
+      <DependentUpon>FrmLEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\Frmpeiban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\Frmpeiban.designer.cs">
+      <DependentUpon>Frmpeiban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmProperty.Designer.cs">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmRainConstruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmRainConstruct.Designer.cs">
+      <DependentUpon>FrmRainConstruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldMaterialCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldMaterialCalculate.designer.cs">
+      <DependentUpon>FrmScaffoldMaterialCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldPowerCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldPowerCalculate.designer.cs">
+      <DependentUpon>FrmScaffoldPowerCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommendSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommendSelect.designer.cs">
+      <DependentUpon>FrmScaffoldRecommendSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend1.Designer.cs">
+      <DependentUpon>FrmRecommend1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend2.Designer.cs">
+      <DependentUpon>FrmRecommend2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend3.Designer.cs">
+      <DependentUpon>FrmRecommend3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend4.Designer.cs">
+      <DependentUpon>FrmRecommend4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend5.Designer.cs">
+      <DependentUpon>FrmRecommend5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend6.Designer.cs">
+      <DependentUpon>FrmRecommend6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend7.Designer.cs">
+      <DependentUpon>FrmRecommend7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldSchematicDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldSchematicDiagram.designer.cs">
+      <DependentUpon>FrmScaffoldSchematicDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldSelfSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmScaffoldSelfSelect.designer.cs">
+      <DependentUpon>FrmScaffoldSelfSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmShowChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmShowChart.Designer.cs">
+      <DependentUpon>FrmShowChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmUsePower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmUsePower.Designer.cs">
+      <DependentUpon>FrmUsePower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmUseWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmUseWater.Designer.cs">
+      <DependentUpon>FrmUseWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\penban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\penban.Designer.cs">
+      <DependentUpon>penban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclChart.Designer.cs">
+      <DependentUpon>UclChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclCustom.Designer.cs">
+      <DependentUpon>UclCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclEditor.Designer.cs">
+      <DependentUpon>UclEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclExcel.designer.cs">
+      <DependentUpon>UclExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclInsertText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclInsertText.Designer.cs">
+      <DependentUpon>UclInsertText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclProperty.Designer.cs">
+      <DependentUpon>UclProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl1.Designer.cs">
+      <DependentUpon>Ucl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl2.Designer.cs">
+      <DependentUpon>Ucl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl3.Designer.cs">
+      <DependentUpon>Ucl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl4.Designer.cs">
+      <DependentUpon>Ucl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl5.Designer.cs">
+      <DependentUpon>Ucl5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl6.Designer.cs">
+      <DependentUpon>Ucl6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclScaffold\Ucl7.Designer.cs">
+      <DependentUpon>Ucl7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclSelect.Designer.cs">
+      <DependentUpon>UclSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclArrayList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\UclArrayList.designer.cs">
+      <DependentUpon>UclArrayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BeamForm.cs" />
+    <Compile Include="Model\ClimateFeature.cs" />
+    <Compile Include="Model\ComprehensiveEvaluation.cs" />
+    <Compile Include="Model\CompreStrength.cs" />
+    <Compile Include="Model\Concretemaintain.cs" />
+    <Compile Include="Model\ConcreteMeasure.cs" />
+    <Compile Include="Model\ConcreteProject.cs" />
+    <Compile Include="Model\Conretestrength1.cs" />
+    <Compile Include="Model\ConstructPrepare.cs" />
+    <Compile Include="Model\FormBase.cs" />
+    <Compile Include="Model\Formwork.cs" />
+    <Compile Include="Model\FromSelect.cs" />
+    <Compile Include="Model\InsertTextPileProject.cs" />
+    <Compile Include="Model\InsertTextRoof.cs" />
+    <Compile Include="Model\InsertTextWinterMeasure.cs" />
+    <Compile Include="Model\InsertTextWinterMaintain.cs" />
+    <Compile Include="Model\LEC.cs" />
+    <Compile Include="Model\ManageTarget.cs" />
+    <Compile Include="Model\ManageMember.cs" />
+    <Compile Include="Model\Peiban.cs" />
+    <Compile Include="Model\PlanLabor.cs" />
+    <Compile Include="Model\PlanMachine.cs" />
+    <Compile Include="Model\PlanMaterial.cs" />
+    <Compile Include="Model\PrepareMachineTool.cs" />
+    <Compile Include="Model\PrepareMaterial.cs" />
+    <Compile Include="Model\ProfileBase.cs" />
+    <Compile Include="Model\ProfileBuild.cs" />
+    <Compile Include="Model\ProfileSpecialBase.cs" />
+    <Compile Include="Model\ProfileStruct.cs" />
+    <Compile Include="Model\RainConstruct.cs" />
+    <Compile Include="Model\ScaffoldAssessment.cs" />
+    <Compile Include="Model\ScaffoldMaterialCalculate.cs" />
+    <Compile Include="Model\ScaffoldPowerCalculate.cs" />
+    <Compile Include="Model\ScaffoldRecommendSelect.cs" />
+    <Compile Include="Model\ScaffoldSchematicDiagram.cs" />
+    <Compile Include="Model\ScaffoldSelfSelect.cs" />
+    <Compile Include="Model\UsePower.cs" />
+    <Compile Include="Model\UseWater.cs" />
+    <Compile Include="Service\AuthorityService.cs" />
+    <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Config\Connection.cs" />
+    <Compile Include="Implement\Entity\Role.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain1.resx">
+      <DependentUpon>FrmMain1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Authority\UclModule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Authority\FrmModule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Common\FrmBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Common\UclError.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Common\RichTextBoxEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RichTextBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Common\WinExcelControlEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WinExcelControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Common\WinWordControlEx.resx">
+      <DependentUpon>WinWordControlEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Content\FrmModel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Content\UclChapter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclChapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Content\FrmChapter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmChapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Content\UclModel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Content\UclTemplate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Content\FrmTemplate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Project\FrmProjectInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmProjectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Project\FrmProjectShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmProjectShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Reference\UclDesignDaquan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclDesignDaquan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Reference\UclSpecification.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclSpecification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FemSelect.resx">
+      <DependentUpon>FemSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmArrayList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmArrayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmAssessment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmAssessResultshow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAssessResultshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmBeamForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmClimateFeature.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmClimateFeature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmComprehensiveEvaluation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmComprehensiveEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmCompreStrength.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCompreStrength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmConcretemaintain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConcretemaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmConcreteMeasure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConcreteMeasure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmConcreteProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConcreteProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmConretestrength1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConretestrength1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmConstructPrepare.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConstructPrepare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmExcel.resx">
+      <DependentUpon>FrmExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmFromSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmFromSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmInsertText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInsertText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmFormwork.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmFormwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmLEC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\Frmpeiban.resx">
+      <DependentUpon>Frmpeiban.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmProperty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmRainConstruct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRainConstruct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldMaterialCalculate.resx">
+      <DependentUpon>FrmScaffoldMaterialCalculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldPowerCalculate.resx">
+      <DependentUpon>FrmScaffoldPowerCalculate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommendSelect.resx">
+      <DependentUpon>FrmScaffoldRecommendSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend4.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend5.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend6.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldRecommend\FrmRecommend7.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecommend7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldSchematicDiagram.resx">
+      <DependentUpon>FrmScaffoldSchematicDiagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmScaffoldSelfSelect.resx">
+      <DependentUpon>FrmScaffoldSelfSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmShowChart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmShowChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmUsePower.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUsePower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmUseWater.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUseWater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\penban.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>penban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclChart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclCustom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclExcel.resx">
+      <DependentUpon>UclExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclInsertText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclInsertText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclProperty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl4.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl5.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl6.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclScaffold\Ucl7.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ucl7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UclSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\UclArrayList.resx">
+      <DependentUpon>UclArrayList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Implement\Entity\Module.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service\ContentService.cs" />
+    <Compile Include="Service\UtilService.cs" />
+    <Compile Include="Implement\UtilImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shortcut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Under.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="acdbmgd, Version=17.0.54.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="acmgd, Version=17.0.54.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Autodesk.AutoCAD.Interop, Version=17.0.54.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Autodesk.AutoCAD.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common, Version=17.0.54.0, Culture=neutral, PublicKeyToken=eed84259d7cbf30b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Graph, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Graph.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.1.0.0, Culture=neutral" />
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Drawing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.XML, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.XML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WinWordControl, Version=1.0.2099.29690, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WinWordControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\粉土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\红粘土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\砂土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\素填土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\碎石土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\岩石.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\淤泥质土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\粘性土.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\地基承载力调整系数.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zhpj .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\卵石圆砾.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\卵石圆砾.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\charts\复合木纤维板.jpg" />
+    <None Include="bin\Debug\charts\覆面木胶合板.jpg" />
+    <None Include="bin\Debug\charts\覆面竹胶合板.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\charts\立柱抗压强度.jpg" />
+    <None Include="Resources\碗扣9.JPG" />
+    <None Include="Resources\碗扣8.JPG" />
+    <None Include="Resources\碗扣7.JPG" />
+    <None Include="Resources\碗扣6.JPG" />
+    <None Include="Resources\碗扣5.JPG" />
+    <None Include="Resources\碗扣4.jpg" />
+    <None Include="Resources\碗扣3.JPG" />
+    <None Include="Resources\碗扣2.JPG" />
+    <None Include="Resources\碗扣10.JPG" />
+    <None Include="Resources\综合评价帮助.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

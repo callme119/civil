@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBoxX1.Text" xml:space="preserve">
+    <value>
+优点：
+1杆件配件少，仅有六种；
+2长干的长度任意，接长的接头容易错开；
+3扣件可在杆件任意位置设置，构架尺寸可任意选定和调整；
+4采用较长杆件，接长接头的数量较少；
+5斜杆和剪刀撑的角度可任意调整；
+6可使用任何种类的脚手板或架铺设，可对接平铺，也可搭设铺设；
+7可根据防（围）护要求任意设置杆件；
+8价格较低。
+
+缺点：
+1扣件易丢失；
+2节点处的杆件为偏心连接，靠抗滑力传递荷载和内力，因而降低了其承载能力；
+3扣件节点的连接质量受扣件本身质量和工人操作的影响显著。
+
+适用性：
+1构筑各种形式的脚手架、模板和其它支撑架；
+2组装井字架；
+3搭设坡道、工棚、看台及其它临时构筑物；
+4作其它种类脚手架的辅助加强件；
+5单排脚手架搭设高度不应超过24m；双排脚手架搭设高度不宜超过50m。</value>
+  </data>
+  <data name="textBoxX4.Text" xml:space="preserve">
+    <value>
+优点：
+1杆件轴线连接、节点构造无偏心；
+2盘扣焊于立杆上，插片焊于横杆上，不会丢失，易损耗件仅为U形销一种；
+3连接盘可扣接八个方向的扣接头；
+4可构造承载力很大的多种截面支撑柱；
+5可构造平面为曲线形的脚手架；
+6定型杆件规格可满足一般构架需要；
+7可使用任何种类的脚手板或架铺设，可对接平铺，也可搭设铺设；
+8具有横托撑等配件，可构造横向受力的支撑架；
+9安装速度快。
+
+缺点：
+1横杆为几种尺寸的定型杆，立杆上盘扣节点按0.5m间距设置，使构架尺寸受到限制；
+2价格较贵。
+
+适用性：
+1构筑各种形式的脚手架、模板和其它支撑架；
+2组装井字架；
+3搭设坡道、工棚、看台及其它临时构筑物；
+4构筑强力组合支撑柱；
+5构筑承受横向作用的支撑架；
+6搭设高度不宜大于24米。</value>
+  </data>
+  <data name="textBoxX3.Text" xml:space="preserve">
+    <value>
+优点：
+1杆件轴线连接、节点构造无偏心；
+2碗口焊于立杆上，插片焊于横杆上，不会丢失，易损耗件仅为U形销一种；
+3定型杆件规格可满足一般构架需要；
+4可构造承载力很大的多种截面支撑柱；
+5可构造平面为曲线形的脚手架；
+6整架承载力提高，约比同等情况的扣件式钢管脚手架提高15%以上；
+7可使用任何种类的脚手板或架铺设，可对接平铺，也可搭设铺设；
+8具有横托撑等配件，可构造横向受力的支撑架；
+9安装速度快。
+
+缺点：
+1横杆为几种尺寸的定型杆，立杆上碗扣节点按0.6m间距设置，使构架尺寸受到限制；
+2U形连接销易丢失；
+3价格较贵。
+
+适用性：
+1构筑各种形式的脚手架、模板和其它支撑架；
+2组装井字架；
+3搭设坡道、工棚、看台及其它临时构筑物；
+4构筑强力组合支撑柱；
+5构筑承受横向作用的支撑架。
+6搭设高度大于20米后，JGJ166-2008构造要求较多
+</value>
+  </data>
+  <data name="textBoxX2.Text" xml:space="preserve">
+    <value>
+优点：
+1杆件配件少，仅有六种；
+2长干的长度任意，接长的接头容易错开；
+3扣件可在杆件任意位置设置，构架尺寸可任意选定和调整；
+4采用较长杆件，接长接头的数量较少；
+5斜杆和剪刀撑的角度可任意调整；
+6可使用任何种类的脚手板或架铺设，可对接平铺，也可搭设铺设；
+7可根据防（围）护要求任意设置杆件；
+8采用分段悬挑和分段搭设，各段之间的架料在某些情况下还可以周转使用；
+9悬挑后受力方向明确，构造简单；
+10分段悬挑，更有利于增加作业面；
+11能较好缓解工人由于高空作业而产生的心理不安全感。
+
+缺点：
+1扣件易丢失；
+2节点处的杆件为偏心连接，靠抗滑力传递荷载和内力，因而降低了其承载能力；
+3扣件节点的连接质量受扣件本身质量和工人操作的影响显著；
+4型钢较长、用钢量大、成本交高。
+
+适用性：
+1构筑各种形式的脚手架、模板和其它支撑架；
+2组装井字架；
+3搭设坡道、工棚、看台及其它临时构筑物；
+4作其它种类脚手架的辅助加强件；
+5运用悬挑的方式，理论上讲，可以解决任何高度的建筑物或构筑物的施工。
+</value>
+  </data>
+  <data name="textBoxX5.Text" xml:space="preserve">
+    <value>
+优点：
+1施工中装拆容易、架设效率高，省工省时、安全可靠、经济适用；
+2结构合理，受力性能好，充分利用利用钢材强度，承载能力高；
+3具有多种功能，又称多功能脚手架。
+
+缺点：
+1构架尺寸无任何灵活性，构架尺寸的任何改变都要换用另一种型号的门架及其配件；
+2交叉支撑易在中铰点处折断；
+3定型脚手板较重；
+4价格较贵。
+
+适用性：
+1构造定型脚手架；
+2构造活动工作台；
+3搭设高度不宜超过55米。
+</value>
+  </data>
+  <data name="textBoxX6.Text" xml:space="preserve">
+    <value>
+优点：
+1节约钢材、电力和施工耗材；
+2随着楼层的增高，经济性越高；
+3可应用于各种结构的建筑主体；
+4整个作业过程不占用其它起重机械，大大提高施工效率。
+
+缺点：
+1脚手架平面布置中提升机位布点位置要求高；
+2脚手架在升降过程中由于各机位引起的拉应力、提升时脚手架的摇晃与碰撞、施工中各种材料工具的撞击等对脚手架架体的自身连接刚度影响较大；
+3脚手架在上升和下降时整体性可能会受到大型垂直运输机械的影响；
+4对操作人员专业化知识要求高。
+
+适用性：
+45米以上的建筑主体均适用，80米以上的建筑主体经济性将更突出, 工程外形结构应较简单。
+</value>
+  </data>
+</root>

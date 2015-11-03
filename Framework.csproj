@@ -175,6 +175,12 @@
     <Compile Include="Interface\Workbench\FemSelect.designer.cs">
       <DependentUpon>FemSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\Workbench\FrmAllPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmAllPlan.Designer.cs">
+      <DependentUpon>FrmAllPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\Workbench\FrmAntiPressure.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,12 @@
     <Compile Include="Interface\Workbench\FrmCompreStrength.Designer.cs">
       <DependentUpon>FrmCompreStrength.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\Workbench\FrmConcreteConstructionMachinery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmConcreteConstructionMachinery.designer.cs">
+      <DependentUpon>FrmConcreteConstructionMachinery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\Workbench\FrmConcretemaintain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,11 +271,23 @@
     <Compile Include="Interface\Workbench\FrmExcel.designer.cs">
       <DependentUpon>FrmExcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\Workbench\FrmFoundationPouring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\FrmFoundationPouring.Designer.cs">
+      <DependentUpon>FrmFoundationPouring.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\Workbench\FrmFromSelect.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interface\Workbench\FrmFromSelect.Designer.cs">
       <DependentUpon>FrmFromSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\Frmhntzd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\Frmhntzd1.designer.cs">
+      <DependentUpon>Frmhntzd1.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\Workbench\FrmInsertText.cs">
       <SubType>Form</SubType>
@@ -276,6 +300,12 @@
     </Compile>
     <Compile Include="Interface\Workbench\FrmFormwork.Designer.cs">
       <DependentUpon>FrmFormwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Workbench\Frmkjjg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Workbench\Frmkjjg.Designer.cs">
+      <DependentUpon>Frmkjjg.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\Workbench\FrmLEC.cs">
       <SubType>Form</SubType>
@@ -487,10 +517,12 @@
     <Compile Include="Interface\Workbench\UclArrayList.designer.cs">
       <DependentUpon>UclArrayList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\AllPlan.cs" />
     <Compile Include="Model\BeamForm.cs" />
     <Compile Include="Model\ClimateFeature.cs" />
     <Compile Include="Model\ComprehensiveEvaluation.cs" />
     <Compile Include="Model\CompreStrength.cs" />
+    <Compile Include="Model\ConcreteConstructionMachinery.cs" />
     <Compile Include="Model\Concretemaintain.cs" />
     <Compile Include="Model\ConcreteMeasure.cs" />
     <Compile Include="Model\ConcreteProject.cs" />
@@ -498,11 +530,14 @@
     <Compile Include="Model\ConstructPrepare.cs" />
     <Compile Include="Model\FormBase.cs" />
     <Compile Include="Model\Formwork.cs" />
+    <Compile Include="Model\FoundationPouring.cs" />
     <Compile Include="Model\FromSelect.cs" />
+    <Compile Include="Model\hntzd1.cs" />
     <Compile Include="Model\InsertTextPileProject.cs" />
     <Compile Include="Model\InsertTextRoof.cs" />
     <Compile Include="Model\InsertTextWinterMeasure.cs" />
     <Compile Include="Model\InsertTextWinterMaintain.cs" />
+    <Compile Include="Model\Kjjg.cs" />
     <Compile Include="Model\LEC.cs" />
     <Compile Include="Model\ManageTarget.cs" />
     <Compile Include="Model\ManageMember.cs" />
@@ -615,6 +650,10 @@
       <DependentUpon>FemSelect.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmAllPlan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAllPlan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interface\Workbench\FrmArrayList.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FrmArrayList.cs</DependentUpon>
@@ -643,6 +682,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>FrmCompreStrength.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmConcreteConstructionMachinery.resx">
+      <DependentUpon>FrmConcreteConstructionMachinery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interface\Workbench\FrmConcretemaintain.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FrmConcretemaintain.cs</DependentUpon>
@@ -667,9 +710,17 @@
       <DependentUpon>FrmExcel.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\FrmFoundationPouring.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmFoundationPouring.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interface\Workbench\FrmFromSelect.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FrmFromSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\Frmhntzd1.resx">
+      <DependentUpon>Frmhntzd1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\Workbench\FrmInsertText.resx">
       <SubType>Designer</SubType>
@@ -678,6 +729,10 @@
     <EmbeddedResource Include="Interface\Workbench\FrmFormwork.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FrmFormwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Workbench\Frmkjjg.resx">
+      <DependentUpon>Frmkjjg.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\Workbench\FrmLEC.resx">
       <SubType>Designer</SubType>

@@ -683,6 +683,42 @@
 
                 }
             }
+            else if (@class.GetType().Equals(new Framework.Model.FoundationPouring().GetType()))//混凝土基础浇筑
+            {
+
+                if (template.Title == "混凝土基础浇筑")
+                {
+                    SelectTjSelf(template, array, @class, data);
+
+                }
+            }
+            else if (@class.GetType().Equals(new Framework.Model.Kjjg().GetType()))//混凝土主体浇筑
+            {
+
+                if (template.Title == "混凝土主体浇筑")
+                {
+                    SelectTjSelf(template, array, @class, data);
+
+                }
+            }
+            else if (@class.GetType().Equals(new Framework.Model.hntzd1().GetType()))//混凝土振捣
+            {
+
+                if (template.Title == "混凝土振捣")
+                {
+                    SelectTjSelf(template, array, @class, data);
+
+                }
+            }
+            else if (@class.GetType().Equals(new Framework.Model.ConcreteConstructionMachinery().GetType()))//混凝土施工机械选择
+            {
+
+                if (template.Title == "混凝土施工机械选择")
+                {
+                    SelectTjSelf(template, array, @class, data);
+
+                }
+            }
             else if (@class.GetType().Equals(new Framework.Model.Concretemaintain().GetType()))//混凝土试块的制作与养护
             {
                 if (template.Title == "混凝土试块的制作与养护")
@@ -1015,7 +1051,30 @@
                 win.CreateModuleIntance += new Framework.Interface.Workbench.FrmConcreteMeasure.CreateModuleHandle(CreateModule);
                 win.ShowDialog();
             }
-            
+            else if (ass.CreateInstance(model.Class).GetType().Equals(new Framework.Model.FoundationPouring().GetType()))//混凝土基础浇筑
+            {
+                FrmFoundationPouring win = new FrmFoundationPouring(chapter, ass.CreateInstance(model.Class));
+                win.CreateModuleIntance += new Framework.Interface.Workbench.FrmFoundationPouring.CreateModuleHandle(CreateModule);
+                win.ShowDialog();
+            }
+            else if (ass.CreateInstance(model.Class).GetType().Equals(new Framework.Model.hntzd1().GetType()))//混凝土振捣
+            {
+                Frmhntzd1 win = new Frmhntzd1(chapter, ass.CreateInstance(model.Class));
+                win.CreateModuleIntance += new Framework.Interface.Workbench.Frmhntzd1.CreateModuleHandle(CreateModule);
+                win.ShowDialog();
+            }
+            else if (ass.CreateInstance(model.Class).GetType().Equals(new Framework.Model.Kjjg().GetType()))//混凝土强主体浇筑
+            {
+                FrmKjjg win = new FrmKjjg(chapter, ass.CreateInstance(model.Class));
+                win.CreateModuleIntance += new Framework.Interface.Workbench.FrmKjjg.CreateModuleHandle(CreateModule);
+                win.ShowDialog();
+            }
+            else if (ass.CreateInstance(model.Class).GetType().Equals(new Framework.Model.ConcreteConstructionMachinery().GetType()))//混凝土施工机械选择
+            {
+                FrmConcreteConstructionMachinery win = new FrmConcreteConstructionMachinery(chapter, ass.CreateInstance(model.Class));
+                win.CreateModuleIntance += new Framework.Interface.Workbench.FrmConcreteConstructionMachinery.CreateModuleHandle(CreateModule);
+                win.ShowDialog();
+            }
         }
 
     }
